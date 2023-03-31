@@ -21,7 +21,8 @@ def SVM_linear(n_samples, centers, random_state):
     # plot support vectors
     ax.scatter(clf.support_vectors_[:,0], clf.support_vectors_[:,1], s=100, linewidth=1, facecolors="none", edgecolors ="k")
     plt.show()
-    
+ 
+# Example
 SVM_linear(n_samples=250, centers=2, random_state=42)
 
 
@@ -43,4 +44,5 @@ def SVM_polynomial(n_samples):
     ax.scatter(X[svr.support_], y[svr.support_], facecolor="none", edgecolor="k",s=20)
     plt.show()
 
+# Example 
 SVM_polynomial(n_samples=100)
